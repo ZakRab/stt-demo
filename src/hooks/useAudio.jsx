@@ -23,7 +23,7 @@ function useAudio() {
       mediaRecorder.onstop = () => {
         if (videoRef.current) videoRef.current.pause();
 
-        const blob = new Blob(chunks, { type: "mp3" });
+        const blob = new Blob(chunks, { type: "wav" });
         setBlob(blob);
         const blobURL = URL.createObjectURL(blob);
         setBlobURL(blobURL);
