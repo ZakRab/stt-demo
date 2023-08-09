@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 export default function useApi(blob, blobURL) {
-  // const speech = require("@google-cloud/speech");
+  //! const speech = require("@google-cloud/speech");
   const client = new speech.SpeechClient();
   let transcription;
   useEffect(() => {
